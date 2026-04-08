@@ -1,0 +1,24 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+version="5.0">
+
+<servlet>
+    <servlet-name>UrlServlet</servlet-name>
+    <servlet-class>com.urlapp.UrlServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UrlServlet</servlet-name>
+    <url-pattern>/shorten</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>com.urlapp.RedirectServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/go</url-pattern>
+</servlet-mapping>
+
+</web-app>
